@@ -1,0 +1,1310 @@
+@charset "utf-8";
+/* CSS Document */
+* {
+  box-sizing: border-box;
+}
+
+#menucontactos{
+	height: 100%;
+}
+
+#htmlcontactos{
+	height: 100%;
+}
+
+#footerid{
+	bottom: 0;
+	
+	
+	width: 100%;
+}
+
+body{
+	
+	font-family: 'Open Sans', sans-serif;
+background-color:#121212;
+	  margin: 0;
+	padding: 0;
+	height: 100%;
+}
+
+.contseleccionarobra{
+	color:#D7D7D7;
+	display: flex;
+	justify-content: center;
+	margin-bottom: 1rem;
+	font-size: 0.9rem;
+	
+}
+
+.titulobio{
+	font-size: 1rem;
+}
+
+.verfotografias{
+	display: flex;
+	justify-content: center;
+	
+}
+
+.googlemap{
+	height: 18rem;
+}
+
+p {
+	margin: 0;
+	padding: 0;
+}
+
+button {
+	margin:0;
+	padding: 0;
+}
+
+strong {
+	font-weight: 600;
+}
+
+.redescontacto {
+	margin-top: 2rem;
+	margin-bottom: 2rem;
+	margin-right: 2rem;
+	margin-left: 2rem;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	visibility: hidden;
+	
+}
+
+
+
+.contvideoportfolio{
+	width: 100%;
+	margin: 0.1rem;
+	height: auto;
+	padding-top: 0.1rem;
+	padding-bottom: 0.1rem;
+	margin-bottom: 1rem;
+	
+}
+
+.contvideoobra{
+	width: 49%;
+	margin: 0.1rem;
+	height: auto;
+	padding-top: 0.1rem;
+	padding-bottom: 0.1rem;
+	margin-bottom: 1rem;
+	margin-left: 0.2rem;
+	
+}
+
+.fondocontprincserv{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+
+/* MENU CEL */
+.menucel {
+	display: flex;
+ z-index: 900;
+  overflow: hidden;
+  position: fixed; /* Set the navbar to fixed position */
+  top: 0; /* Position the navbar at the top of the page */
+  width: 100%; /* Full width */
+	background-color:#3A3A3A;
+	color: #D7D7D7;
+	justify-content: space-between;
+	border-bottom: 0.05rem solid #D7D7D7;
+	padding-top: 1rem;
+	padding-bottom: 0.65rem;
+	padding-left: 0.7rem;
+	padding-right: 0.7rem;
+	
+
+ }
+
+.menuceltitulo{
+	
+
+}
+
+.menucel h1{
+	padding-top: 0.05rem;
+	font-size: 1rem;
+	font-weight: 400;
+	
+}
+
+.menucelhamburguesa{
+font-size: 1.2rem;
+	
+}
+
+.overlaycel {
+  display: none;
+	height: 100%;
+  width: 100%;
+  position: fixed; /* Stay in place */
+  z-index: 1000;
+  left: 0;
+  top: 0;
+  background-color: rgb(0,0,0);
+  background-color: rgba(0,0,0,0.95);
+  overflow-x: hidden;
+  transition: 0.5s;
+}
+
+.overlay-contentcel {
+  position: relative;
+  top: 5rem;
+  width: 100%;
+  text-align: center;
+  
+}
+
+.overlaycel a {
+  padding-bottom: 0.8rem;
+	padding-top: 0.8rem;
+  text-decoration: none;
+  font-size: 0.84rem;
+  color: #D7D7D7;
+  display: block;
+
+	
+}
+
+
+.overlaycel a:hover, .overlaycel a:focus {
+  color: #f1f1f1;
+	background-color: #5C5C5C;
+}
+
+.overlaycel .closebtncel {
+  position: absolute;
+  top: 3px;
+  right: 20px;
+  font-size: 50px;
+	margin-bottom: 2rem;
+	
+}
+
+.menucelidiomas {
+	
+	border-top:solid 0.1rem #D7D7D7;
+	border-bottom:solid 0.1rem #D7D7D7;
+		
+	
+	
+}
+
+.menucelpaginas{
+	
+	border-top:solid 0.1rem #D7D7D7;
+		
+	margin-top: 0.5rem;
+	margin-bottom: 0.5rem;
+	
+}
+
+.dropdown-content {
+  display: none;
+ 
+  
+  z-index: 1000;
+}
+
+.dropdown-contenthijo a{
+	display:flex;
+	flex-direction: column;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+
+  
+}
+
+.dropdown{
+	color: #D7D7D7;
+}
+
+/* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+.show {display:block;}
+
+.menucelredes img{
+	margin-right: 1.8rem;
+	margin-left: 1.8rem;
+	margin-top: 0.1rem;
+	margin-bottom: 0.2rem;
+	width: 26%;
+}
+
+.menucelredes{
+	display: flex;
+	flex-direction: row;
+	display: none;
+	margin-top: 0.8rem;
+}
+
+a.menucelpaginaactiva{
+	background-color: #5C5C5C;
+}
+
+
+.menucelsecciones{
+	
+	border-top:solid 0.1rem #D7D7D7;
+}
+
+
+/* MENU CEL */
+
+/* MEDIA QUERIES PARA PC */
+
+@media only screen and (min-width: 768px) {
+	
+	
+	.collapsible:after {
+  content: '\002B';
+float: right;
+  margin-left: 5px;
+	font-size: 1.8rem;
+	
+}
+
+.active:after {
+  content: "\2212";
+	font-size: 1.8rem;
+}
+	
+	.collapsible{
+		  font-size: 1.1rem;
+	font-weight: 200;
+	}
+	
+	.footerservicios{
+		font-size: 1.2rem;
+	font-weight: 200;
+		
+	}
+	
+	.footervideopa{
+		background-color: rgba(0,0,0,0.0);
+  color: #D7D7D7;
+  cursor: pointer;
+  padding-top: 0.8rem;
+	padding-bottom: 0.8rem;
+	padding-right:0.6rem;
+	padding-left: 0.8rem;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+		font-weight: 300;
+	}
+	
+	.footervideoobra{
+		background-color: rgba(0,0,0,0.0);
+  color: #D7D7D7;
+  cursor: pointer;
+  padding-top: 0.8rem;
+	padding-bottom: 0.8rem;
+	padding-right:0.6rem;
+	padding-left: 0.8rem;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+		font-weight: 300;
+	}
+	
+	
+	.contprincipalport{
+	width: 100%;
+	
+}
+	
+	.contprincipalobra{
+			width: 100%;
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+	
+	}
+	
+	.contprincserv{
+	margin: 0.01;
+	display: flex;
+		flex-wrap: wrap;
+		justify-content: center; 
+		
+		width: 100%;
+}
+	
+	.contfooter{
+		
+	}
+	
+	.textocontacto{
+	margin-left: 25%;
+		margin-right: 25%;}
+	
+	.navmenucel{
+		display: none;
+	}
+	
+.contimagenservicios{
+	width: 49.5%;
+	margin: 0.1rem;
+	height: auto;
+	padding-top: 0.1rem;
+	padding-bottom: 0.1rem;
+	
+}
+	
+	.menucelgeneral{
+		display: none;
+		
+	}	
+
+.modal-dialog {
+      max-width: 70%;
+      margin-top: 5%;
+  }
+	
+
+
+.container{
+	  width: 100%;
+}
+
+.textoinicio{
+		
+	}
+	
+.play{
+	position: absolute;
+	top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+	filter: opacity(70%);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	
+}
+	
+.play img{
+		width: 80%;
+	height: auto;
+	}
+	
+	.paginas{
+		
+	}
+	
+.collapsibleservicios{
+		font-size: 1.2rem;
+	}
+	
+	.contenidosinmenuyfooter{
+		margin-right: 25%;
+		margin-left: 25%;
+	margin-top: 3rem;
+	margin-bottom: 3rem;;
+	}
+	
+	.contenidosinmenuyfooterservicios{
+		margin-right: 20%;
+		margin-left: 20%;
+	margin-top: 3rem;
+	margin-bottom: 3rem;;
+	}
+	
+	.contenidosinmenuyfooterobra{
+		margin-right: 15%;
+		margin-left: 15%;
+	margin-top: 3rem;
+	margin-bottom: 3rem;;
+	}
+	
+	}
+
+/* MEDIA QUERIES PARA PC */
+
+/* MEDIA QUERIES PARA TABLET HORIZONTAL */
+
+@media only screen and (max-width: 768px) and (min-width: 400px) {
+	
+	.menucelgeneral{
+		
+		
+	}
+	
+	.modal-dialog {
+      max-width: 70%;
+      top:15%;
+	margin-right:10%;
+	margin-left:15%;
+  }
+}
+
+/* MEDIA QUERIES PARA TABLET HORIZONTAL */
+@media only screen and (max-width: 400px) {
+.modal-dialog {
+      max-width: 70%;
+      top: 15%;
+	margin-right:10%;
+	margin-left:15%;
+  }
+	
+	.menucelgeneral{
+		
+		
+	}
+}
+/* MEDIA QUERIES PARA CELULAR */
+
+
+
+@media only screen and (max-width: 768px) {
+	
+	.menuceltitulopa h1{
+		font-size: 0.8rem;
+		margin-top: 0.4rem;
+			margin-bottom: 0rem;
+	}
+	
+	.verfotografias{
+	display: flex;
+	justify-content: center;
+		margin-top: 2.8rem;
+		margin-left: 1.5rem;
+		font-size: 0.8rem;
+	
+}
+	
+	.reconocimientos{
+		font-size: 0.6rem;
+	}
+	
+	.footervideoobra{
+		background-color: rgba(0,0,0,0.0);
+  color: #D7D7D7;
+  cursor: pointer;
+  padding-top: 0.8rem;
+	padding-bottom: 0.8rem;
+	padding-right:0.6rem;
+	padding-left: 0.8rem;
+		font-size: 0.8rem;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+		font-weight: 300;
+	}
+	
+	.contprincipalobra{
+			width: 100%;
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+	
+	}
+	
+	.contvideoobra{
+	width: 100%;
+	margin: 0.1rem;
+	height: auto;
+	padding-top: 0.1rem;
+	padding-bottom: 0.1rem;
+	margin-bottom: 1rem;
+	margin-left: 0.2rem;
+	
+}
+	
+	.submenu {
+    display: none;
+}
+	
+	.menucelgeneral{
+		
+		
+	}
+	
+	#footerid{
+	display: none;
+}
+	
+	.textoimagenservicios{
+		margin-bottom: 0.4rem;
+	}
+	
+	.collapsible:after {
+  content: '\002B';
+float: right;
+  margin-left: 5px;
+	font-size: 0.8rem;
+	
+}
+
+.active:after {
+  content: "\2212";
+	font-size: 0.8rem;
+}
+	
+	.colapsabletexto{
+		font-size: 0.6rem;
+		
+	}
+	
+	.colapsabletexto img{
+		width: 5%;
+		height: auto;
+	}
+	
+	.collapsible img{
+		width: 8%;
+	}
+	
+	.play{
+	position: absolute;
+	top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+	filter: opacity(70%);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+	
+	.play img{
+		width: 30%;
+	height: auto;
+}
+	
+	
+	.collapsible{
+		
+		  font-size: 0.6rem;
+	font-weight: 200;
+	}
+	
+	.contenidosinmenuyfooter{
+		margin-top: 4rem;
+		margin-bottom: 1rem;
+		margin-left: 0.5rem;
+		margin-right: 0.5rem;
+		display: flex;
+		justify-content: center;
+		
+		
+	}
+	
+	.contenidosinmenuyfooterservicios{
+		margin-top: 4rem;
+		margin-bottom: 1rem;
+		margin-left: 0.5rem;
+		margin-right: 0.5rem;
+		display: flex;
+		justify-content: center;
+		
+		
+	}
+	
+	.contenidosinmenuyfooterobra{
+		margin-top: 4rem;
+		margin-bottom: 1rem;
+		margin-left: 0.5rem;
+		margin-right: 0.5rem;
+		
+		
+		
+	}
+	
+		.contprincipalport{
+			width: 100%;}
+	
+	.contprincipalobra{
+			width: 100%;}
+	
+		.textocontacto{
+	margin-left: 2%;
+		margin-right: 2%;}
+	
+	
+	.botontotopdiv{
+		display: none;
+	}
+	
+	
+	.textoinicio{
+		margin-right: 3%;
+		margin-left: 3%;
+			margin-top: 4%;
+	margin-bottom: 2%;
+		font-size: 0.9rem
+	}
+	
+	.contenidoprincipal{
+		font-size: 0.9rem;}
+	
+.menuweb{
+		display: none;
+	}
+	
+		.contfooter{
+		display: none;
+	}
+	
+.secciones{
+		display: none;
+	}
+	
+	.container{
+		width: 100%;
+	}
+
+
+	
+	.contprincserv{
+	margin-top: 0.6rem;
+	display: flex;
+		flex-direction: column;
+		
+		
+}
+
+.contimagenservicios{
+	width: 100%;
+	margin: 0.1rem;
+	height: auto;
+	
+}
+	
+	.colapsabletextoservicios{
+		font-size: 0.9rem;
+	}
+
+
+/* INICO */
+
+.textoreel{
+	font-weight:400;
+	margin-top: 0.6rem;
+	margin-bottom: 1rem;
+	color:#D7D7D7;
+	display: flex;
+	justify-content: center;
+	
+}
+
+.contenidoprincipal{
+	
+display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	background-color:#121212;
+}
+
+.textoinicio{
+	
+	text-align: justify;
+	color:#D7D7D7;
+	
+}
+
+/* INICO */
+
+	.collapsibleservicios{
+		font-size: 1rem;
+	}
+	
+	.collapsibleserviciossinboton{
+		font-size: 1rem;
+	}
+
+}	
+
+/* MEDIA QUERIES PARA CELULAR */
+
+/* IDIOMAS */
+
+
+.idiomasnavegador{
+	float: right;
+	color: white;
+	
+	
+	
+}
+
+.idiomasnavegador a {
+	  float: right;
+ 
+	
+	padding-bottom: 0.7rem;
+	padding-top:0.7rem;
+
+  color: white;
+  text-decoration: none;
+  font-size: 17px;
+  width: 20%;
+  text-align: center; /* If you want the text to be centered */
+}
+	
+.idiomasnavegador img{
+	width: 10%;
+}
+
+
+.idiomasnavegador a.lenguajeactivo {
+  background-color:#121212;
+	
+}
+
+.idiomasnavegador a:hover {
+	cursor: pointer;
+	  background-color: #000;
+	transition-duration: 0.3s;
+}
+
+
+
+
+
+/* IDIOMAS */
+
+/* SECCIONES */
+
+
+
+.navegador {
+  	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	width: 100%;
+  	background-color: #555;
+  	overflow: auto;
+	border:#000000;
+	border-width: thick;
+	margin-bottom: 1rem;
+	border-bottom: 0.09rem solid #BBBBBB;
+	border-top: 0.09rem solid #BBBBBB;
+	
+}
+
+/* Navigation links */
+
+.secciones{
+	width: 80%;
+	
+}
+
+.secciones a {
+  float: left;
+  padding-left: 2rem;
+	padding-right: 2rem;
+	padding-bottom: 0.7rem;
+	padding-top:0.7rem;
+  color: white;
+  text-decoration: none;
+  font-size: 17px;
+  
+  text-align: center; /* If you want the text to be centered */
+}
+
+/* Add a background color on mouse-over */
+.secciones a:hover {
+  background-color: #000;
+	transition-duration: 0.3s;
+}
+
+/* Style the current/active link */
+.secciones a.activesecciones {
+  background-color:#121212;
+}
+
+/* SECCIONES */
+
+/* INICO */
+
+.textoreel{
+	font-weight: 400;
+	margin-top: 0.6rem;
+	margin-bottom: 1rem;
+	color:#D7D7D7;
+	display: flex;
+	justify-content: center;
+	
+}
+
+.contenidoprincipal{
+	
+display: flex;
+	
+	flex-direction: column;
+	background-color:#121212;
+}
+
+.textoinicio{
+	
+	
+	text-align: justify;
+	color:#D7D7D7;
+	font-weight: 200;
+}
+
+/* INICO */
+
+/* TEXTO CONTACTO */
+
+.textocontacto{
+
+	margin-top: 1%;
+	margin-bottom: 2%;
+	text-align: center;
+	
+	color:#D7D7D7;
+	
+}
+
+.textocontacto img {
+	margin-top: 0.5rem;
+	margin-bottom: 0.5rem;
+	margin-right: 0.5rem;
+	margin-left: 0.5rem;
+}
+
+/* TEXTO CONTACTO */
+
+.hidden {
+  display: none;
+}
+
+/* FOOTER */
+
+.footer{
+	height: 3rem;
+	width: 100%;
+	background-color: #555;
+}
+
+.derechos {
+	color:white;
+	width: 33.33%;
+	font-size: 0.7rem;
+	text-align: right;
+	margin-right: 1rem;
+}
+
+.contfooter{
+	
+	display: flex;
+  bottom: 0;
+  width: 100%; /* Full width */
+	flex-direction: row;
+	background-color: #555;
+	padding: 0.3rem;
+	color: white;
+	border-top: 0.09rem solid #BBBBBB;
+	margin-top: 1rem;
+}
+
+.contfootersocial{
+	visibility: hidden;
+	width: 33.33%;
+}
+
+.contfootersocial img{
+	margin-left: 1.3rem;
+	margin-top: 0.2rem;
+	margin-bottom: 0.2rem;
+	
+}
+
+.contfooterx{
+	width: 33.33%;
+	
+	
+}
+
+.contfooterderechos{
+	width: 33.33%;
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+	margin-right: 1rem;
+	
+	
+}
+
+/* FOOTER */
+
+/* VIDEOS */
+
+.fotovideo{
+	position: relative;
+	
+}
+
+
+	
+.container {
+  position: relative;
+    cursor: pointer;
+	padding: 0;
+	margin:0;
+}
+
+.container2 {
+  position: relative;
+    cursor: pointer;
+  width: 100%;
+	padding: 0;
+	margin:0;
+}
+
+.container2:hover .fotovideo {
+  filter: brightness(50%);
+	transition-duration: 0.3s;
+}
+
+.container2:hover .play {
+	filter: opacity(100%);
+	transition-duration: 0.3s;
+  
+}
+
+.container2:hover .footervideoobra {
+	background-color: #555;
+	transition-duration: 0.4s;
+}
+
+.container:hover .fotovideo {
+  filter: brightness(50%);
+	transition-duration: 0.3s;
+}
+
+.container:hover .play {
+	filter: opacity(100%);
+	transition-duration: 0.3s;
+  
+}
+
+/* VIDEOS */
+
+/* MODALES */
+
+.modal{
+	background-color: rgba(0,0,0,.8);
+	
+	
+}
+.modal-content{
+	
+	
+}
+
+
+
+
+
+.modal-body {
+  position:relative;
+  padding:0px;
+}
+.close {
+  position:absolute;
+  right:-30px;
+  top:0;
+  z-index:999;
+  font-size:2rem;
+  font-weight: normal;
+  color:#fff;
+  opacity:1;
+}
+
+/* MODALES */
+
+/* SLIDESHOW */
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Hide the images by default */
+.mySlides1 {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* SLIDESHOW */
+
+
+
+/* COLAPSABLES */
+
+.collapsible {
+  
+	background-color: rgba(0,0,0,0.0);
+  color: #D7D7D7;
+  cursor: pointer;
+  padding-top: 0.4rem;
+	padding-bottom: 0.4rem;
+	padding-right:0.6rem;
+	padding-left: 0.8rem;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+
+	
+	
+}
+
+.active, .collapsible:hover {
+  background-color: #555;
+}
+
+
+
+.colapsabletexto{
+	margin-top: 1rem;
+	margin-bottom: 1rem;
+	font-weight: 200;
+}
+
+.content {
+ 	font-family: 'Open Sans', sans-serif;
+	
+	padding-top: 0rem;
+	padding-bottom:0rem;
+	padding-right:1rem;
+	padding-left: 1rem;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+  color: #C9C9C9;
+	font-size: 1rem;
+	text-align: justify;
+	
+}
+
+	.imagenlaurelmas{
+	float: right;
+	margin-right: 0.2rem;
+	margin-left: 0.7rem;
+}
+	/* texto en COLAPSABLES */
+	.textoimagen {
+	border-bottom: 0.09rem solid #BBBBBB;
+	
+
+	
+	}
+	
+.textotitulodirector{
+	font-size: 1rem;
+}
+
+.textotitulofilm{
+	font-size: 1.3rem;
+}
+
+
+	
+/* COLAPSABLES */
+
+
+/* COLAPSABLES SERVICIOS */
+
+.collapsibleservicios {
+  
+	background-color: rgba(0,0,0,0.0);
+  color: #D7D7D7;
+  cursor: pointer;
+  padding-top: 0.4rem;
+	padding-bottom: 0.4rem;
+	padding-right:0.6rem;
+	padding-left: 0.8rem;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+	
+
+	
+	
+}
+
+.collapsibleserviciossinboton{
+	background-color: rgba(0,0,0,0.0);
+  color: #D7D7D7;
+  
+  padding-top: 0.4rem;
+	padding-bottom: 0.4rem;
+	padding-right:0.6rem;
+	padding-left: 0.8rem;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+	
+}
+
+.active, .collapsibleservicios:hover {
+  background-color: #555;
+}
+
+.collapsibleservicios:after {
+  content: '\002B';
+float: right;
+  margin-left: 5px;
+	font-size: 1rem;
+	
+}
+
+.active:after {
+  content: "\2212";
+	font-size: 1rem;
+}
+
+.colapsabletextoservicios{
+	margin-top: 1rem;
+	margin-bottom: 1rem;
+	font-weight: 200;
+}
+
+.contentservicios {
+ 	font-family: 'Open Sans', sans-serif;
+	
+	padding-top: 0rem;
+	padding-bottom:0rem;
+	padding-right:1rem;
+	padding-left: 1rem;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+  color: #C9C9C9;
+	font-size: 1rem;
+	text-align: justify;
+	
+}
+
+	.imagenlaurelmas{
+	float: right;
+	margin-right: 0.2rem;
+	margin-left: 0.7rem;
+}
+	/* texto en COLAPSABLES */
+	.textoimagenservicios {
+	border-bottom: 0.09rem solid #BBBBBB;
+		
+	
+
+	
+	}
+	
+
+
+
+	
+/* COLAPSABLES SERVICIOS */
+
+/* GRID FOTOGRAFIAS */
+.rowfotografia {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+/* Create four equal columns that sits next to each other */
+.columnfotografia {
+  flex: 25%;
+  max-width: 25%;
+  padding: 0 4px;
+}
+
+.columnfotografia img {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 800px) {
+  .columnfotografia {
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .columnfotografia {
+    flex: 100%;
+    max-width: 100%;
+  }
+}
+
+
+/* GRID FOTOGRAFIAS */
+
+/* BOTON HACIA ARRIBA */
+
+#myBtnTOTOP {
+  display: none; /* Hidden by default */
+  position: fixed; /* Fixed/sticky position */
+  bottom: 20px; /* Place the button at the bottom of the page */
+  right: 50px; /* Place the button 30px from the right */
+  z-index: 99; /* Make sure it does not overlap */
+  border: none; /* Remove borders */
+  outline: none; /* Remove outline */
+  background-color: rgba(0,0,0,0);
+  color: white; /* Text color */
+  cursor: pointer; /* Add a mouse pointer on hover */
+  padding: 15px; /* Some padding */
+ 
+  font-size: 4rem; /* Increase font size */
+}
+
+#myBtnTOTOP:hover {
+  color:#606060 ; /* Add a dark-grey background on hover */
+}
+
+/* BOTON HACIA ARRIBA */

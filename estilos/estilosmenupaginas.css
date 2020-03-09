@@ -1,0 +1,259 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+#sonidointegral{
+	text-transform: uppercase;
+	font-size: 0.85rem;
+}
+
+#estudiode{
+	text-transform: uppercase;
+	font-size: 0.85rem;
+	letter-spacing: 0.25rem;
+}
+
+#productora{
+	text-transform: uppercase;
+	font-size:1.05rem;
+}
+
+body{
+	
+	margin: 0;
+	padding: 0;
+	font-family: 'Open Sans', sans-serif;
+}
+
+#sitioenconstruccion{
+	font-size: 0.8rem;
+	font-style: italic; }
+
+#disenadoraudiovisual{
+	text-transform: uppercase;
+	font-size: 0.95rem;
+	font-weight: 200;
+}
+
+#orienteder{
+	margin-bottom: 0.2rem;
+}
+
+#orienteder{
+	font-size: 1.3rem;
+}
+
+.paginas{
+	height: 12.1rem;
+	background-color: #000000;
+}
+  
+.indexcontenedorgeneral{
+	height: 100%;
+	width: 100%;
+}
+
+	.indexcontenedorizq{
+		height: 100%;
+		width: 33.33%;
+		margin-right: 0.2rem;
+		background-image:url("../fotoindexizqcolor.jpg");
+		background-size: cover;
+		background-position: 0% 95%;
+		
+		filter: saturate(0);
+		 cursor: pointer;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		
+	}
+	
+	.indexcontenedorcentro{
+		height: 100%;
+		width: 33.33%;
+		background-position: 46% 15%;
+			margin-right: 0.2rem;
+	background-image:url("../pa169.jpg");
+	background-size: auto;
+	
+	filter: saturate(0);
+ cursor: pointer;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		
+	}
+	
+	.indexcontenedorder{
+	background-image:url("../fotoindexderechacolor.jpg");
+	height: 100%;
+		width: 33.33%;
+background-position: 0% 68%;
+	background-size: cover;
+	
+	filter: saturate(0);
+	 cursor: pointer;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	
+  
+}
+
+	.indexcontenedorgeneral{
+		display: flex;
+		flex-direction: row;
+		
+	}
+	
+
+
+
+
+.active{
+	filter: none;
+}
+
+
+
+  
+	
+
+
+	
+.indexcontenedorizq:hover .active{
+	filter: none;
+	transition: 0.4s;
+}
+	
+
+
+.indexcontenedortexto{
+	
+	color: #DCDCDC;
+	padding-top:0.1rem;
+	padding-bottom:0.1rem;
+	padding-right:1rem;
+	padding-left:1rem;
+	
+	
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+	
+	
+}
+	
+
+.indexcontenedorimgizq .active{
+	filter: none;
+	
+}
+
+.indexcontenedorcentro:hover {
+	filter: none;
+	transition: 0.4s;
+}
+
+
+
+
+
+.indexcontenedorizq:hover {
+	filter: none;
+	transition: 0.4s;	
+}
+
+.indexcontenedorder:hover div {
+		font-size: 1.35rem;
+	transition: 0.1s;
+	
+}
+
+.indexcontenedorder:hover {
+	filter: none;
+	transition: 0.4s;	
+}
+
+.indexcontenedorimgder{
+
+	                           
+  color: #B9B9B9;
+  border: none;
+  cursor: pointer;
+  
+	
+}
+
+
+.indexcontenedorder:hover {
+	filter: none;
+	transition: 0.4s;	
+}
+	
+
+.indexcontenedortexto h2{
+	font-weight: 200;
+	font-size: 1.8rem;
+	margin-top: 0.5rem;
+	margin-bottom: 0rem;
+}
+
+
+
+.indexcontenedortexto p{
+	font-weight: 200;
+	font-size: 1.2rem;
+	margin-top: 0rem;
+}
+	
+.indexcontenedorcentro:hover div + #orienteizq {
+	font-size: 4rem;
+	transition: 0.1s;
+	
+}
+
+	.indexcontenedorizq:hover #orienteizq {
+	font-size: 1.9rem;
+	transition: 0.1s;
+	
+}
+
+	.indexcontenedorizq:hover #sonidointegral {
+	font-size: 0.9rem;
+	transition: 0.1s;
+	
+}
+
+	.indexcontenedorizq:hover #estudiode {
+	font-size: 0.9rem;
+	transition: 0.1s;
+	
+}
+
+	.indexcontenedorcentro:hover #orientecentro {
+	font-size: 1.9rem;
+	transition: 0.1s;
+	
+}
+
+	.indexcontenedorcentro:hover #productora {
+	font-size: 1.1rem;
+	transition: 0.1s;
+	
+}
+
+	.indexcontenedorder:hover #orienteder {
+	font-size: 1.37rem;
+	transition: 0.1s;
+	
+}
+
+	.indexcontenedorder:hover #disenadoraudiovisual {
+	font-size: 0.98rem;
+	transition: 0.1s;
+	
+}

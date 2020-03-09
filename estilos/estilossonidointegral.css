@@ -1,0 +1,227 @@
+@charset "utf-8";
+/* CSS Document */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  margin: 0;
+	padding: 0;
+	
+	
+}
+
+.textoreel{
+	font-weight: bold;
+	margin-top: 0.6rem;
+	margin-bottom: none;
+	
+}
+
+.secciones {
+  	width: 100%;
+  	background-color: #555;
+  	overflow: auto;
+	border:#000000;
+	border-width: thick;
+	margin-bottom: 1rem;
+	border-bottom: 0.09rem solid #BBBBBB;
+	border-top: 0.09rem solid #BBBBBB;
+}
+
+/* Navigation links */
+.secciones a {
+  float: left;
+  padding-left: 2rem;
+	padding-right: 2rem;
+	padding-bottom: 0.7rem;
+	padding-top:0.7rem;
+  color: white;
+  text-decoration: none;
+  font-size: 17px;
+  
+  text-align: center; /* If you want the text to be centered */
+}
+
+/* Add a background color on mouse-over */
+.secciones a:hover {
+  background-color: #000;
+	transition-duration: 0.3s;
+}
+
+/* Style the current/active link */
+.secciones a.activesecciones {
+  background-color:#121212;
+}
+
+.contenidoprincipal{
+	
+display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	background-color:#C3C3C3;
+}
+
+.textoinicio{
+	margin-left: 25%;
+	margin-right: 25%;
+	margin-top: 1%;
+	margin-bottom: 2%;
+	text-align: justify;
+	
+	
+}
+
+.hidden {
+  display: none;
+}
+
+
+
+.footer{
+	height: 3rem;
+	width: 100%;
+	background-color: #555;
+}
+
+.derechos {
+	color:#DCDCDC;
+	width: 33.33%;
+	font-size: 0.7rem;
+	text-align: right;
+	margin-right: 1rem;
+}
+
+.fotovideo{
+	position: relative;
+	
+}
+
+.play{
+	position: absolute;
+	top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+	filter: opacity(70%);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+  
+	
+}
+	
+.container {
+  position: relative;
+    cursor: pointer;
+  width: 50%;
+	padding: 0;
+	margin:0;
+}
+
+.container2 {
+  position: relative;
+    cursor: pointer;
+  width: 100%;
+	padding: 0;
+	margin:0;
+}
+
+.container2:hover .fotovideo {
+  filter: brightness(50%);
+	transition-duration: 0.3s;
+}
+
+.container2:hover .play {
+	filter: opacity(100%);
+	transition-duration: 0.3s;
+  
+}
+
+
+
+
+.container:hover .fotovideo {
+  filter: brightness(50%);
+	transition-duration: 0.3s;
+}
+
+.container:hover .play {
+	filter: opacity(100%);
+	transition-duration: 0.3s;
+  
+}
+
+
+
+
+/* estilosmodal 
+
+*/
+
+.modal{
+	background-color: rgba(0,0,0,.8);
+	
+	
+}
+.modal-content{
+	
+	
+}
+
+.modal-dialog {
+      max-width: 70%;
+      margin-top: 5%;
+  }
+
+
+
+.modal-body {
+  position:relative;
+  padding:0px;
+}
+.close {
+  position:absolute;
+  right:-30px;
+  top:0;
+  z-index:999;
+  font-size:2rem;
+  font-weight: normal;
+  color:#fff;
+  opacity:1;
+}
+
+
+.contfooter{
+	display: flex;
+	flex-direction: row;
+	width: 100%;
+	background-color: #555;
+	padding: 0.6rem;
+	color: white;
+	border-top: 0.09rem solid #BBBBBB;
+}
+
+.contfootersocial{
+	
+	width: 33.33%;
+}
+
+.contfootersocial img{
+	margin-left: 0.4rem;
+;}
+
+.contfooterx{
+	width: 33.33%;
+	
+	
+}
+
+.contfooterderechos{
+	width: 33.33%;
+	justify-content: center;
+	text-align: right;
+	
+	
+}
